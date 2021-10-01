@@ -1,0 +1,23 @@
+*{
+    padding:0;
+    margin:0;
+}
+
+h1{
+    font-size: 35px;
+    text-align: center;
+    color:red;
+}
+
+.mp{
+    width:350px;
+    height: 350px;
+    margin: auto;
+}
+
+.mp img{
+    width:250px;
+    height: 250px;
+    border-radius: 50%;
+
+}
