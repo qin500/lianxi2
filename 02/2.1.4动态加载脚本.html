@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>动态加载脚本</title>
+    <style>
+        .my{
+            width:100%;
+            height: 100%;
+            position: fixed;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            top: 0;
+            background-color: white;
+        }
+    </style>
+</head>
+<body>
+<p>这世界我来了</p>
+<script>
+  let script=document.createElement("script");
+  script.src="js/example.js"
+  script.async=false;//同步
+  document.head.appendChild(script)
+
+
+  function compare(a,b){
+      if(a<b){
+          console.log('A is less than B')
+      }else if(a > b){
+          console.log("A is greater than B")
+      }else{
+          console.log("A is equl to B")
+      }
+  }
+
+  compare(10,10)
+
+
+
+</script>
+<noscript>
+    <p class="my">this page requires a javascipt-enabled browser</p>
+</noscript>
+
+</body>
+</html>
